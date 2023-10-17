@@ -22,15 +22,14 @@
       <h1>Crie e compartilhe seu evento.</h1>
       <p>O primeiro passo, é preencher esse formulario de inscricao.</p>
     </header>
-    <form action="">
-
+    <form id="form">
       <fieldset>
         <div class="fieldset-wrapper">
           <legend>Informoçoes Do Evento</legend>
 
           <div class="input-wrapper">
             <label for="event-title">Titulo do evento <span>(minimo 8 caracteres)</span></label>
-            <input type="text" name="" id="event-title">
+            <input type="text" name="" id="event-title" required minlength="8">
           </div>
 
           <div class="input-wrapper">
@@ -68,7 +67,7 @@
           <div class="input-wrapper">
             <label for="event-password">senha de acesso para os participantes <span>(minimo 8
                 caracteres)</span></label>
-            <input type="text" name="" id="event-password">
+            <input type="text" name="" id="event-password" minlength="8">
           </div>
 
           <div class="checkbox-wrapper">
@@ -100,11 +99,10 @@
           </div>
         </div>
       </fieldset>
-
-  </div>
-
-
-  </form>
+    </form>
+    <footer>
+      <input class="button" type="submit" form="form" value="Salvar evento">
+    </footer>
   </div>
 </body>
 
